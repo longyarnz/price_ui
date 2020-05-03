@@ -23,8 +23,12 @@ export default function PricePlan() {
 
   return (
     <div>
+      <h1>
+        Current Plan: {plan.toUpperCase()}
+      </h1>
+
       <PricingTable highlightColor='#1976D2'>
-        <PricingSlot buttonText='Current Plan' title='FREE' priceText='₦0/month'>
+        <PricingSlot buttonClass="button-submit btn" title='FREE' priceText='₦0/month'>
           <PricingDetail> <b>15</b> projects</PricingDetail>
           <PricingDetail> <b>5 GB</b> storage</PricingDetail>
           <PricingDetail> <b>5</b> users</PricingDetail>
