@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/price_ui/static/css/main.4dba91af.chunk.css",
+    "main.js": "/price_ui/static/js/main.628577a2.chunk.js",
+    "main.js.map": "/price_ui/static/js/main.628577a2.chunk.js.map",
+    "runtime-main.js": "/price_ui/static/js/runtime-main.a9f26615.js",
+    "runtime-main.js.map": "/price_ui/static/js/runtime-main.a9f26615.js.map",
+    "static/js/2.9a9ee327.chunk.js": "/price_ui/static/js/2.9a9ee327.chunk.js",
+    "static/js/2.9a9ee327.chunk.js.map": "/price_ui/static/js/2.9a9ee327.chunk.js.map",
+    "index.html": "/price_ui/index.html",
+    "precache-manifest.505933f0d032098a75b96ec1ebb62ae2.js": "/price_ui/precache-manifest.505933f0d032098a75b96ec1ebb62ae2.js",
+    "service-worker.js": "/price_ui/service-worker.js",
+    "static/css/main.4dba91af.chunk.css.map": "/price_ui/static/css/main.4dba91af.chunk.css.map",
+    "static/js/2.9a9ee327.chunk.js.LICENSE.txt": "/price_ui/static/js/2.9a9ee327.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9f26615.js",
+    "static/js/2.9a9ee327.chunk.js",
+    "static/css/main.4dba91af.chunk.css",
+    "static/js/main.628577a2.chunk.js"
+  ]
+}
