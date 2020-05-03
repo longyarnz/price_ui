@@ -2,14 +2,22 @@ import React from 'react';
 import { PricingTable, PricingSlot, PricingDetail } from 'react-pricing-table';
 
 export default function PricePlan() {
-  const switchToBronze = () => console.log('Welcome to Bronze Plan');
-  const switchToSilver = () => console.log('Welcome to Silver Plan');
-  const switchToGold = () => console.log('Welcome to Gold Plan');
+  const switchToBronze = () => {
+    API('bronze').then();
+  }
+  
+  const switchToSilver = () => {
+    API('silver').then();
+  }
+  
+  const switchToGold = () => {
+    API('gold').then();
+  }
 
   return (
     <div>
       <PricingTable highlightColor='#1976D2'>
-        <PricingSlot highlighted buttonText='Current Plan' title='FREE' priceText='₦0/month'>
+        <PricingSlot buttonText='Current Plan' title='FREE' priceText='₦0/month'>
           <PricingDetail> <b>15</b> projects</PricingDetail>
           <PricingDetail> <b>5 GB</b> storage</PricingDetail>
           <PricingDetail> <b>5</b> users</PricingDetail>
@@ -36,4 +44,14 @@ export default function PricePlan() {
       </PricingTable>
     </div>
   )
+}
+
+function API(newPlan) {
+  return Promise.resolve({
+    ok: true,
+    status: 200,
+    body: {
+      plan: newPlan
+    }
+  })
 }
