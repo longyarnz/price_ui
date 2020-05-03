@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PricingTable, PricingSlot, PricingDetail } from 'react-pricing-table';
 
 export default function PricePlan() {
+  const [plan, setPlan] = useState('gold');
+
+  const handleResponse = response => {
+    const { plan } = response.body;
+    response.ok && response.status === 200 && setPlan(plan);
+  }
+
   const switchToBronze = () => {
-    API('bronze').then();
+    API('bronze').then(handleResponse);
   }
   
   const switchToSilver = () => {
-    API('silver').then();
+    API('silver').then(handleResponse);
   }
   
   const switchToGold = () => {
-    API('gold').then();
+    API('gold').then(handleResponse);
   }
 
   return (
